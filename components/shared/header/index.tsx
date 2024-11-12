@@ -20,9 +20,7 @@ export const Header = () => {
           className={styles.logo}
           classNameTitle={styles.title}
         />
-        <nav className={styles.nav}>
-          <Nav />
-        </nav>
+        <Nav />
       </div>
     </header>
   );
