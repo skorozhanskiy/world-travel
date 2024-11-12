@@ -14,14 +14,12 @@ const navList = [
 ];
 export const Nav: React.FC<Props> = ({ className }) => {
   return (
-    <nav className={className}>
-      <ul>
-        {navList.map((item) => (
-          <li key={item.id}>
-            <Link href={item.link}>{item.name}</Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <ul>
+      {navList.map((item) => (
+        <li key={item.id}>
+          <Link href={item.link}>{item.name}</Link>
+        </li>
+      ))}
+    </ul>
   );
 };
