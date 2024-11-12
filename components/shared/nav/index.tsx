@@ -1,10 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
 
-interface Props {
-  className?: string;
-}
-
 const navList = [
   { id: 1, name: 'Главная', link: '/' },
   { id: 2, name: 'Туры и направления', link: '/' },
@@ -12,7 +8,7 @@ const navList = [
   { id: 4, name: 'Галерея', link: '/' },
   { id: 5, name: 'Контакты', link: '/' },
 ];
-export const Nav: React.FC<Props> = ({ className }) => {
+export const Nav = () => {
   return (
     <ul>
       {navList.map((item) => (
