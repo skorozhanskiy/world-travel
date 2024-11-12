@@ -4,11 +4,8 @@ import { Logo } from '../logo';
 import { Nav } from '../nav';
 
 import styles from './header.module.scss';
-interface Props {
-  className?: string;
-}
 
-export const Header: React.FC<Props> = ({ className }) => {
+export const Header = () => {
   return (
     <header
       className={styles.container}
