@@ -35,10 +35,24 @@ const listContent = [
     pictureTitle: 'Популярные направления',
     imgUrl: '/',
   },
+  {
+    id: 6,
+    src: '../img/img-01.jpg',
+    alt: 'Картинка компаса',
+    pictureTitle: 'Популярные направления',
+    imgUrl: '/',
+  },
 ];
 export default function Home() {
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '50px' }}>
+    <div
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: '50px',
+        rowGap: '90px',
+        justifyContent: 'space-around',
+      }}>
       {listContent.map((item) => (
         <GeneralBlock key={item.id} {...item} />
       ))}
