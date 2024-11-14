@@ -1,5 +1,5 @@
 import React from 'react';
-import { GeneralBlock } from '../components/shared/general-block';
+import { MainContainer, GeneralBlock, CommonTitle } from '@/components/shared';
 
 const listContent = [
   {
@@ -28,34 +28,23 @@ const listContent = [
     contentButton: 'Подробнее',
     buttonUrl: '/',
   },
-  {
-    id: 5,
-    src: '../img/img-01.jpg',
-    alt: 'Картинка компаса',
-    pictureTitle: 'Популярные направления',
-    imgUrl: '/',
-  },
-  {
-    id: 6,
-    src: '../img/img-01.jpg',
-    alt: 'Картинка компаса',
-    pictureTitle: 'Популярные направления',
-    imgUrl: '/',
-  },
 ];
 export default function Home() {
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        gap: '50px',
-        rowGap: '90px',
-        justifyContent: 'space-around',
-      }}>
-      {listContent.map((item) => (
-        <GeneralBlock key={item.id} {...item} />
-      ))}
-    </div>
+    <MainContainer>
+      <CommonTitle titleName="Главная" />
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: '50px',
+          rowGap: '90px',
+          justifyContent: 'space-around',
+        }}>
+        {listContent.map((item) => (
+          <GeneralBlock key={item.id} {...item} />
+        ))}
+      </div>
+    </MainContainer>
   );
 }

@@ -1,5 +1,10 @@
 import React from 'react';
 
+import { MainContainer, CommonTitle } from '@/components/shared';
 export default function AboutCompany() {
-  return <div>about_company</div>;
+  return (
+    <MainContainer>
+      <CommonTitle titleName="О компании" />
+    </MainContainer>
+  );
 }
