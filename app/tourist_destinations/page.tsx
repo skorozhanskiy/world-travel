@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { MainContainer, GeneralBlock, CommonTitle } from '@/components/shared';
 const listContent = [
@@ -44,6 +45,7 @@ const listContent = [
     imgUrl: '/',
   },
 ];
+
 export default function TouristDestinations() {
   return (
     <MainContainer>

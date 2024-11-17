@@ -52,7 +52,7 @@ export const Footer = () => {
     <footer className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.left_block}>
-          <Logo nameLogo="Путешествие по миру" />
+          <Logo className={styles.logo} nameLogo="Путешествие по миру" />
           <p className={styles.text}>
             История о том, как мы должны сидеть сложа руки, о том, как мы относимся к элитам, о том,
             как мы относимся к временным происшествиям, о труде и великой долоре.

@@ -15,6 +15,9 @@
 	flex-direction: column;
 	gap: 20px;
 }
+.logo {
+	color: #fff;
+}
 .text {
 	font-size: 16px;
 	line-height: 1.625;
@@ -49,4 +52,59 @@
 	font-size: 18px;
 	font-weight: 400;
 	color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+		background-color: #265847;
+		background-color: #265847;
+	}
+	.wrapper {
+		max-width: 1900px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 20% 1fr;
+		padding: 80px 15px 100px 15px;
+		gap: 160px;
+	}
+	.left_block {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.text {
+		font-size: 16px;
+		line-height: 1.625;
+		color: #fff;
+	}
+	.right_block {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 20px;
+	}
+	.title {
+		margin-top: 9px;
+		font-size: 24px;
+		font-weight: 700;
+		color: #fff;
+	}
+	.block {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.list {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+	.title {
+	}
+	.item {
+	}
+	.link {
+		font-size: 18px;
+		font-weight: 400;
+		color: #fff;
+	}
 }

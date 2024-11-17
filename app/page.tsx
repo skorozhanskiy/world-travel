@@ -32,14 +32,15 @@ const listContent = [
 export default function Home() {
   return (
     <MainContainer>
-      <CommonTitle titleName="Главная" />
       <div
+        id="home"
         style={{
           display: 'flex',
           flexWrap: 'wrap',
           gap: '50px',
           rowGap: '90px',
           justifyContent: 'space-around',
+          paddingTop: '50px',
         }}>
         {listContent.map((item) => (
           <GeneralBlock key={item.id} {...item} />

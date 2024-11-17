@@ -8,12 +8,13 @@
 	--bc-button-nav-border: #f4f6fa;
 	--bc-button-nav-active: #fbfbfc a;
 }
+
 .wrapper {
 	display: grid;
 	grid-auto-columns: 1fr;
 	grid-template-rows: auto;
 	justify-content: space-between;
-	gap: 30px;
+	gap: 60px;
 
 	background-color: #ffffff;
 	.main {
