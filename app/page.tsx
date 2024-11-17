@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainContainer, GeneralBlock, CommonTitle } from '@/components/shared';
+import { MainContainer, GeneralBlock } from '@/components/shared';
 
 const listContent = [
   {
